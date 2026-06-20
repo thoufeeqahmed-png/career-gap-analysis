@@ -6,6 +6,8 @@ st.write("Current directory:", os.getcwd())
 st.write("Files:", os.listdir("."))
 
 df = pd.read_csv("final_employee_analysis.csv")
+st.write(df.columns.tolist())
+
 import streamlit as st
 import pandas as pd
 
