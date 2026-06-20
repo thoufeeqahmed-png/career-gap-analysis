@@ -157,5 +157,6 @@ high_priority = filtered_df[
     filtered_df['RetentionOpportunityIndex'] >= threshold
 ]
 
-
+df.to_csv("final_employee_analysis.csv", index=False)
+print(df.columns.tolist())
 
