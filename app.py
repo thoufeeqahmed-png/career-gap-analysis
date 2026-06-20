@@ -1,4 +1,11 @@
+import os
+import streamlit as st
+import pandas as pd
 
+st.write("Current directory:", os.getcwd())
+st.write("Files:", os.listdir("."))
+
+df = pd.read_csv("final_employee_analysis.csv")
 import streamlit as st
 import pandas as pd
 
@@ -147,5 +154,6 @@ threshold = st.sidebar.slider(
 high_priority = filtered_df[
     filtered_df['RetentionOpportunityIndex'] >= threshold
 ]
+
 
 
